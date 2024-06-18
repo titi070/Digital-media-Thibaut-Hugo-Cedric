@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Thibaut, Hugo, Cedric</title>
+    <style>
+        @font-face {
+            font-family: 'designerregular';
+            src: url('font/designer-webfont.woff2') format('woff2'),
+                 url('font/designer-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            font-family: 'designerregular';
+            color: black;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+        }
+        h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #2cca1f;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn + .btn {
+            margin-left: 20px;
+        }
+        .btn:hover {
+            background-color: #2e9b25;
+        }
+        #background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        #music-container {
+            margin-top: 20px;
+        }
+        #lyrics {
+            margin-top: 20px;
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: black;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="fl-studio.png" alt="Background Image">
+
+    <div class="container">
+        <h1>Projet FL Studio Music</h1>
+        <h1>Lu Brazil</h1>
+      
+        <div id="music-container">
+            <audio id="music-player" controls>
+                <source src="Lu-Brazil.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div id="lyrics">
+            <p>Under Rio’s sky, the stars gleam bright,<br>
+            Golden beaches where sand shines light.<br>
+            In the heart of the Amazon, nature wakes,<br>
+            Drums echo stories, no one forsakes.</p>
+
+            <p>Brazil, land of dreams and tech delight,<br>
+            Code dances like samba in the night.<br>
+            Between favelas and high-rise towers,<br>
+            Bytes fly high like rainbow showers.</p>
+
+            <p>In São Paulo streets, the city thrives,<br>
+            Developers create, their passion drives.<br>
+            Lines of code sketch futures to come,<br>
+            Ideas blaze, progress never succumbs.</p>
+
+            <p>Brazil, land of dreams and tech delight,<br>
+            Code dances like samba in the night.<br>
+            Between favelas and high-rise towers,<br>
+            Bytes fly high like rainbow showers.</p>
+
+            <p>From Minas mountains to Bahia's shores,<br>
+            Data centers gleam, connecting more.<br>
+            The future’s built, one byte at a time,<br>
+            Brains on fire, the world they climb.</p>
+
+            <p>Children of tomorrow will code the stars,<br>
+            Bridge past and future, near and far.<br>
+            Technology serves beauty’s embrace,<br>
+            Digital Brazil, a new-found grace.</p>
+
+            <p>Brazil, land of dreams and tech delight,<br>
+            Code dances like samba in the night.<br>
+            Between favelas and high-rise towers,<br>
+            Bytes fly high like rainbow showers.</p>
+
+            <p>In every pixel, a spark of culture,<br>
+            Each algorithm, an adventure.<br>
+            Dreams are traced, line by line,<br>
+            Brazil and tech, a story divine.</p>
+
+            <p>Brazil, land of dreams and tech delight,<br>
+            Code dances like samba in the night.<br>
+            Between favelas and high-rise towers,<br>
+            Bytes fly high like rainbow showers.</p>
+        </div>
+        
+        <div class="footer">
+            Made by Hugo, Thibaut, Cedric
+        </div>
+    </div>
+</body>
+</html>

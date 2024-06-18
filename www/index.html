@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Thibaut, Hugo, Cedric</title>
+    <style>
+        @font-face {
+            font-family: 'designerregular';
+            src: url('font/designer-webfont.woff2') format('woff2'),
+                 url('font/designer-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            font-family: 'designerregular';
+            color: #fff;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #2cca1f;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background-color: #2e9b25;
+            transform: translateY(-3px);
+        }
+        #background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="image.jpg" alt="Background Image">
+
+    <div class="container">
+        <h1>Digital Media</h1>
+        <h2>Thibaut CONTAMINE<br>Hugo VESCHAMBRE<br>Cedric LE COZ</h2>
+        <div>
+            <a href="https://github.com/titi070/Digital-media-Thibaut-Hugo-Cedric" class="btn">Link Github</a>
+        </div>
+        <div>
+            <a href="music.html" class="btn">MP3 Music</a>
+        </div>
+        <div>
+            <a href="https://youtu.be/JQSakOqmKUo" class="btn">MP4 Vidéo</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=zL19uMsnpSU" class="btn">Bonus :)</a>
+        </div>
+    </div>
+</body>
+</html>
